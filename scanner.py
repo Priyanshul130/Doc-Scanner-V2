@@ -18,7 +18,6 @@ mainWin = Tk()
 mainWin.geometry("1200x600")
 mainWin.title("My Scanner")
 mainWin.configure(bg='turquoise')
-# this removes the maximize button
 mainWin.resizable(0,0)
 
 
@@ -44,7 +43,7 @@ def OpenImg():
 
 def ScanImg():
     global img
-    #if source language not selected
+    
     if src_lang.get()=='Source Language':
         messagebox.showwarning("Warning", "Select a source language")
     else:
@@ -53,9 +52,9 @@ def ScanImg():
         txt.delete(1.0,END)
         txt.insert(1.0, text)
 
-#function     
+   
 def Translate():
-    #if language not selected
+    
     if dest_lang.get()=='Destination Language' or src_lang.get()=='Source Language':
         messagebox.showwarning("Warning", "Select language")
     else:
@@ -65,9 +64,9 @@ def Translate():
         else:
             srcLanguage=src_lang.get().lower()
             destLanguage=dest_lang.get()
-            #instance
+  
             translator = Translator()
-            #function 
+         
             translated=translator.translate(text=scannedText ,
                                             src =srcLanguage, dest =destLanguage)
             txt.delete(1.0,END)
@@ -75,7 +74,7 @@ def Translate():
     
 
 def SaveTxt():
-    """Save the current file as a new file."""
+ 
     filepath = filedialog.asksaveasfilename(defaultextension="txt")
     if not filepath:
         return
