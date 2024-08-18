@@ -1,3 +1,5 @@
+#DEVELOPED BY <PRIYANSHUL SHARMA>
+
 from tkinter import *
 from PIL import ImageTk,Image
 import pytesseract
