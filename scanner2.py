@@ -1,5 +1,5 @@
 #DEVELOPED BY <PRIYANSHUL SHARMA>
-
+#WEBPAGE Priyanshul.is-a.dev
 from tkinter import *
 from PIL import ImageTk,Image
 import pytesseract
