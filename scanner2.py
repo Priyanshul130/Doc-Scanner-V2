@@ -133,17 +133,3 @@ dest_lang.grid(row=14,column=1,pady=10)
 
 
 window.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
