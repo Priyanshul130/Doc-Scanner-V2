@@ -10,12 +10,13 @@ from tkinter import filedialog
 from googletrans import Translator, LANGUAGES
 from tkinter import messagebox
 from tkinter import ttk
-
+import os
 
 lang={"Hindi":"hin",
       "English":"eng",
       "Bengali":"ben",
       "Malayanam":"mal"
+
       }
 
 window=Tk()
