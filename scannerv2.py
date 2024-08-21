@@ -1,5 +1,6 @@
 #DEVELOPED BY <PRIYANSHUL SHARMA>
 #WEBPAGE Priyanshul.is-a.dev
+
 from tkinter import *
 from PIL import ImageTk,Image
 import pytesseract
@@ -16,7 +17,6 @@ lang={"Hindi":"hin",
       "Bengali":"ben",
       "Malayanam":"mal"
       }
-
 
 window=Tk()
 window.geometry("1200x600")
